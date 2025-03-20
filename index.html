@@ -1,16 +1,176 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal Berita Sederhana</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        header { font-size: 24px; font-weight: bold; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>News Tangerang: Portal Berita Terkini & Informasi Lokal</title>
+  <meta name="description" content="News Tangerang is your trusted digital news portal delivering the latest and most accurate local news and updates from Tangerang. Stay informed with in-depth analysis and real-time reporting.">
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: #ffffff;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+    /* Navigation */
+    .navbar {
+      background-color: #1a1a1a;
+    }
+    .navbar-brand, .nav-link {
+      color: #ffffff !important;
+    }
+    /* Hero Section */
+    .hero-section {
+      background: url('hero-image.jpg') no-repeat center center;
+      background-size: cover;
+      color: #fff;
+      padding: 100px 0;
+      text-align: center;
+    }
+    .hero-section h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .hero-section p {
+      font-size: 1.25rem;
+      margin-bottom: 30px;
+    }
+    /* Featured Articles */
+    .article-preview img {
+      width: 100%;
+      height: auto;
+    }
+    /* Sidebar */
+    .sidebar .list-group-item a {
+      text-decoration: none;
+      color: #333;
+    }
+    .sidebar .list-group-item a:hover {
+      color: #007bff;
+    }
+    /* Footer */
+    .footer {
+      background-color: #1a1a1a;
+      color: #fff;
+      padding: 40px 0;
+    }
+    .footer a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <header>Selamat Datang di Portal Berita Sederhana</header>
-    <p>Ini adalah template website berita ringan berbasis HTML & CSS.</p>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">News Tangerang</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="color:#fff;">&#9776;</span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Politics</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Economy</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Technology</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Lifestyle</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <h1>News Tangerang</h1>
+      <p>Your Trusted Portal for the Latest Local News & Updates</p>
+      <a href="#" class="btn btn-primary btn-lg">Discover More</a>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <div class="container my-5">
+    <div class="row">
+      <!-- Featured Articles -->
+      <div class="col-lg-8">
+        <h2 class="mb-4">Featured News</h2>
+        <div class="card mb-4 article-preview">
+          <img src="featured1.jpg" class="card-img-top" alt="Featured Article 1">
+          <div class="card-body">
+            <h3 class="card-title">Breaking: Major Event Unfolds in Tangerang</h3>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula urna nec leo placerat, ac eleifend sapien fringilla...</p>
+            <a href="#" class="btn btn-secondary">Read More</a>
+          </div>
+        </div>
+        <div class="card mb-4 article-preview">
+          <img src="featured2.jpg" class="card-img-top" alt="Featured Article 2">
+          <div class="card-body">
+            <h3 class="card-title">Economic Update: Latest Trends Shaping Tangerang</h3>
+            <p class="card-text">Suspendisse potenti. Aenean id dui vel quam fermentum tempus. Nulla facilisi. Curabitur vitae tortor nec sem laoreet...</p>
+            <a href="#" class="btn btn-secondary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Sidebar -->
+      <div class="col-lg-4 sidebar">
+        <h2 class="mb-4">Latest Posts</h2>
+        <ul class="list-group">
+          <li class="list-group-item"><a href="#">Local Event Coverage in Tangerang</a></li>
+          <li class="list-group-item"><a href="#">Tech Innovations: What's New?</a></li>
+          <li class="list-group-item"><a href="#">Health & Lifestyle: Tips for Modern Living</a></li>
+          <li class="list-group-item"><a href="#">Political Update: Recent Developments</a></li>
+          <li class="list-group-item"><a href="#">Community Spotlight: Inspiring Stories</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <!-- About -->
+        <div class="col-md-4">
+          <h5>About News Tangerang</h5>
+          <p>News Tangerang is a trusted digital news portal delivering the latest and most accurate local news and updates from Tangerang and its surrounding areas.</p>
+        </div>
+        <!-- Quick Links -->
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Politics</a></li>
+            <li><a href="#">Economy</a></li>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Lifestyle</a></li>
+          </ul>
+        </div>
+        <!-- Contact -->
+        <div class="col-md-4">
+          <h5>Contact Us</h5>
+          <p>Email: contact@newstangerang.com</p>
+          <p>Phone: +62 21 1234567</p>
+          <p>Address: Jl. Raya Tangerang No. 88, Tangerang, Banten, Indonesia</p>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12 text-center">
+          <p class="mb-0">&copy; 2025 News Tangerang. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and Dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
